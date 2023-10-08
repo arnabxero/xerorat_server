@@ -8,21 +8,21 @@ function DataPage() {
 
   useEffect(() => {
     const getData = async () => {
-
       try {
-        const response = await fetch('/api/getData', {
+        // Append a unique query parameter (timestamp) to the URL
+        const timestamp = Date.now();
+        const response = await fetch(`/api/getData?timestamp=${timestamp}`, {
           method: 'GET'
-        }, { next: { revalidate: 10 } });
+        });
 
         const responseData = await response.json();
 
         setData(responseData.allRatModels);
       } catch (error) {
         setData('An error occurred');
-      } finally {
       }
-
     }
+
     getData();
   }, []);
 
