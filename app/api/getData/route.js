@@ -27,4 +27,4 @@ export const GET = async (req, res) => {
     }
 }
 
-export const revalidate = 10;
+export const revalidate = 1;
