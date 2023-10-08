@@ -37,5 +37,3 @@ export const POST = async (req, res) => {
         return errorResponse;
     }
 }
-
-export const revalidate = 1;
