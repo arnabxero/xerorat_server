@@ -7,7 +7,7 @@ export const POST = async (req, res) => {
 
     try {
 
-        return new Response(JSON.stringify({ message: "API Success", formData }), { status: 201 });
+        return new Response(JSON.stringify({ message: "API Success", formData }), { status: 200 });
 
     } catch (err) {
         return new Response("Failed to create a new prompt", { status: 500 });
