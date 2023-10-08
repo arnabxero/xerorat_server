@@ -7,8 +7,8 @@ function DataPage() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // Fetch data from the API
-    fetch('/api/getData')
+    // Fetch data from the API with cache disabled
+    fetch('/api/getData', { cache: 'no-store' }) // Add cache: 'no-store' option here
       .then((response) => response.json())
       .then((responseData) => setData(responseData.allRatModels))
       .catch((error) => console.error('Error fetching data:', error));
