@@ -12,7 +12,7 @@ export const GET = async (req, res) => {
         const response = new Response(JSON.stringify({ message: "API GET Success", allRatModels }), { status: 200 });
 
         // Add Cache-Control: no-cache header
-        response.headers.set('Cache-Control', 'no-cache');
+        response.headers.set('Cache-Control', 'no-store');
 
         return response;
 
