@@ -26,3 +26,5 @@ export const GET = async (req, res) => {
         return errorResponse;
     }
 }
+
+export const revalidate = 10;
