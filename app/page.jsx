@@ -12,7 +12,7 @@ function DataPage() {
       try {
         const response = await fetch('/api/getData', {
           method: 'GET'
-        });
+        }, { next: { revalidate: 10 } });
 
         const responseData = await response.json();
 
