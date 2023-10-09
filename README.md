@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Android Spyware System - Web Application & Server
 
-## Getting Started
+![Android Spyware System](https://arnob.dev/spyware/img/android-spyware.png)
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Welcome to the web application and server project of the Android Spyware System. This component serves as the central hub for monitoring and accessing data collected from the target Android devices. It provides a user-friendly interface for users to interact with the system.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The web application and server offer the following key features:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- 📊 Dashboard: A comprehensive dashboard providing an overview of monitored devices and data.
+- 📁 File Management: Access files stored on the target devices, including images, videos, and documents.
+- 📞 Call Logs: View detailed call logs, including call duration, timestamps, and contact information.
+- 📩 SMS Monitoring: Monitor incoming and outgoing text messages with content and timestamps.
+- 📸 Media Capture: Capture photos and videos remotely from the target device.
+- 📂 App List: Access a list of installed applications on the target device.
+- 📇 Contact List: Retrieve the contact list from the target device.
+- 💬 Messenger Monitoring: Monitor messages from popular messengers like WhatsApp, Facebook, and Telegram.
+- ⚙️ Device Settings: Access and configure settings on the target device for enhanced control.
 
-## Learn More
+## 💻 Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+The web application and server are built using the following technologies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Node.js**: The backend is powered by Node.js for scalability and performance.
+- **React.js**: The frontend is developed using React.js, ensuring a responsive and user-friendly interface.
+- **Next.js**: Next.js is used for server-side rendering and efficient project management.
+- **MongoDB**: MongoDB serves as the database system to store collected data securely.
+- **AWS S3**: AWS S3 buckets are utilized for reliable and secure data storage services.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+----------------------------------
