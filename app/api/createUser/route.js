@@ -18,7 +18,7 @@ export const POST = async (req, res) => {
 
         const userIdString = newUserModel._id.toString();
 
-        return new Response((userIdString), { status: 200 });
+        return new Response(JSON.stringify({ message: "API GET Success", user_id: userIdString }), { status: 200 });
 
     } catch (err) {
         return new Response("Failed to create a new prompt", { status: 500 });
