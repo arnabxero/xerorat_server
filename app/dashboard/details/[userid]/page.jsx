@@ -12,7 +12,8 @@ const Page = ({ params }) => {
         const getData = async () => {
             try {
                 const requestData = {
-                    userid: params.userid,
+                    instance_id: params.userid,
+                    user_id: localStorage.getItem('xerorat_user_id'), // Add user_id from localStorage
                 };
 
                 console.log(requestData);

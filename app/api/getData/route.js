@@ -2,11 +2,13 @@ import { connectToDB } from '@/lib/dbConnect'
 import { NextResponse } from 'next/server'
 import RATModel from '@/models/ratmodel'
 
-export const GET = async (req, res) => {
+export const POST = async (req, res) => {
+    const { user_id } = await req.json();
+
     try {
         await connectToDB();
 
-        const allRatModels = await RATModel.find().sort({ updatedAt: -1 });
+        const allRatModels = await RATModel.find({ 'formData.user_id': user_id }).sort({ updatedAt: -1 });
 
         // Create the response with Cache-Control header
         const response = new Response(JSON.stringify({ message: "API GET Success", allRatModels }), { status: 200 });
